@@ -1,0 +1,65 @@
+
+/* -----------Import Google Font -------------*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('../images/bg.png');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dosis', sans-serif;
+}
+img{
+    height: 120px;
+    filter: drop-shadow(14px 20px 32px rgba(0, 0, 0, 0.25));
+}
+.cover{
+    z-index: 1;
+    height: 180px;
+    margin-bottom: -108px;
+    animation: animate 4s linear infinite;
+    
+}
+.text{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    width: 470px;
+    margin-top: 30px;
+    align-items: center;
+}
+.text h1{
+    font-size: 80px;
+}
+.text p{
+    font-size: 20px;
+    margin-top: 23px;
+    margin-left: 5px;
+}
+
+@keyframes animate{
+    15%{
+        transform: rotate(45deg) translateY(-226px) ;
+    }
+    40%{
+        transform: rotate(45deg) translateY(-228px) ;
+    }
+    50%{
+        transform: rotate(45deg) translateY(-230px);
+    }
+    75%{
+        transform: rotate(0deg) translateY(0px);
+    }
+    90%{
+        transform: rotate(0deg) translateY(0px);
+    }
+    100%{
+        transform: rotate(0deg) translateY(0px);
+    }
+}
